@@ -6,7 +6,7 @@
 
 class CashRegister
 
-  attr_accessor :total, :discount, :last_transaction_item, :last_item
+  attr_accessor :total, :discount, :last_item
 
   def initialize(discount = 0)
     @total = 0
@@ -48,11 +48,11 @@ class CashRegister
   # remove the last transaction from the total
   # return a total of 0 if all items are removed
   def void_last_transaction
-    
+    self.total = @total - @items[-1]
   end
 
 
-# self.total = @total - @transactions.pop
+# 
 # @items = self.last_item
 
 end
