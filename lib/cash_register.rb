@@ -22,7 +22,7 @@ class CashRegister
   # doesn't forget about the previous total
   def add_item(item, price, quantity = 1)
     @total += price * quantity
-    @transactions << price
+    @transactions << price * quantity
     i = quantity
     until i == 0 do
       @items << item
