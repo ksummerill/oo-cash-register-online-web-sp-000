@@ -49,8 +49,8 @@ class CashRegister
   # return a total of 0 if all items are removed
   def void_last_transaction
     self.total = @total - @transactions[-1]
-    if @items == nil
-      total
+    if @items == []
+      self.total == 0
     end
   end
 
