@@ -1,3 +1,4 @@
+require 'pry'
 # Cash register can:
 # Add items of varying quantities and prices
 # Calculate discounts
@@ -48,6 +49,7 @@ class CashRegister
   # remove the last transaction from the total
   # return a total of 0 if all items are removed
   def void_last_transaction
+    binding.pry
     if @items == []
       self.total == 0
     else self.total = @total - @transactions[-1]
