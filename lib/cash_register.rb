@@ -48,9 +48,9 @@ class CashRegister
   # remove the last transaction from the total
   # return a total of 0 if all items are removed
   def void_last_transaction
-    self.total = @total - @transactions[-1]
     if @items == []
       self.total == 0
+    else self.total = @total - @transactions[-1]
     end
   end
 
