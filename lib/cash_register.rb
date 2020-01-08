@@ -54,7 +54,4 @@ class CashRegister
   end
 
 
-#
-#
-
 end
