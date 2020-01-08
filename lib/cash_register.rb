@@ -51,6 +51,7 @@ class CashRegister
     self.total = @total - @transactions[-1]
     if @items == nil
       total
+    end
   end
 
 
