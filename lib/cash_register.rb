@@ -52,7 +52,7 @@ class CashRegister
   end
 
 
-# 
+#
 # @items = self.last_item
 
 end
